@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Shane Kosir Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/palouse.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Shane Kosir</a></h1>
+					<p>Entry-level data analyst with three
+                    years of Python and R experience in a
+                    research setting</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">Contact</a></li>
+						<li><a href="#two">Machine Learning Project</a></li>
+						<li><a href="#three">Optimization Project</a></li>
+						<li><a href="#four">Chemical Descriptor Project</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/wawawai.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Shane Kosir</h2>
+									</header>
+									<p>Email: skosir18@gmail.com
+									<p>Phone: 440-497-7650
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Machine Learning Project</h3>
+									<p>In this project I trained a neural network to predict O-ring volume swell for sustainable aviation fuels.
+                                    <p>See the full publication <a href="https://www.sciencedirect.com/science/article/pii/S0016236120308280" target="_blank">here</a>.
+									<div class="features">
+										<article>
+											<a href='#' class="image"><img src="images/Neural Network Flowchart Cropped.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Data preprocessing in R</h4>
+												<p>Prepared the raw data for use in a neural network. This involved eliminating features with low variance, 
+                                                removing correlated features, removing instances with missing values, and scaling the data.</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Swell Actual vs Predicted 83 percent kfold 10.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Neural network development with H2O Flow</h4>
+												<p>A preset grid of neural networks were trained and scored, followed by the random generation of neural networks using 
+                                                the AutoML feature in H2O Flow. The result was a neural network consisting of two hidden layers with 500 neurons each. 
+                                                Rectifier activation was used for the hidden layers with a dropout ratio of 0.4 for regularization.</p>
+											</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/seed_swell_pareto.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Optimization in Python</h4>
+												<p>The general approach was to use <a href="http://midaco-solver.com/" target="_blank">ant colony optimization</a> in Python
+                                                to maximize fuel performance within operability limits. Only the final plotting code is available here do to confidentiality 
+                                                requirements.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
