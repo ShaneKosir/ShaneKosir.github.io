@@ -127,8 +127,9 @@
                                             src="images/SEED_zoom.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Optimization with <a href="http://midaco-solver.com/" target="_blank">MIDACO*</a></h4>
-												<p>The general approach was to use ant colony optimization in Python to maximize fuel performance within operability
-                                                limits.</p>
+												<p>Two general steps were involved in the optimization: (1) 500 optimization rounds with random initial
+                                                guesses serving as initializations and (2) six revision rounds intended to reduce discontinuities across
+                                                Pareto fronts. The final Pareto fronts are shown here.</p>
                                                 <p>*Only the plotting code is available here due to confidentiality requirements.
 											</div>
 										</article>
@@ -136,9 +137,9 @@
 											<a class="image"><img src="images/Overall_Pareto_Front_Summary_Unique_SS_0_thru_99_r5.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Pareto front convergence in Python*</h4>
-												<p>One example of an optimization function that I worked on is Pareto front convergence criteria. The cumulative Pareto
-                                                fronts generated via 500 random initial guess optimization rounds went through six rounds of optimization revisions guided by
-                                                convergence criteria to reduce discontinuities.</p>
+												<p>One example of an optimization function that I worked on is Pareto front convergence criteria. ΔSE, ΔED,
+                                                and ΔED derivatives were calculated across the cumulative Pareto fronts to provide a measure of the
+                                                discontinuities that existed.</p>
                                                 <p>*This code is not available due to confidentiality requirements.
 											</div>
 										</article>
