@@ -76,7 +76,7 @@
                                             src="images/Neural Network Flowchart Cropped.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Data preprocessing with R</h4>
-												<p>Prepared the raw data for use in a neural network. This involved eliminating features with low variance, 
+												<p>The raw data used to train the neural network was preprocessed in R. This involved eliminating features with low variance, 
                                                 removing correlated features, removing instances with missing values, and scaling the data.</p>
 											</div>
 										</article>
@@ -86,11 +86,10 @@
 											<div class="inner">
 												<h4>Neural network development with H2O Flow</h4>
 												<p>A preset grid of neural networks were trained and scored, followed by the random generation of neural networks using 
-                                                the AutoML feature in H2O Flow. The result was a neural network consisting of two hidden layers with 500 neurons each. 
-                                                Rectifier activation was used for the hidden layers with a dropout ratio of 0.4 for regularization.</p>
+                                                the AutoML feature in H2O Flow. The result was a neural network consisting of two hidden layers with 500 neurons each.</p>
 											</div>
 										</article>
-										<article>
+<!-- 										<article>
 											<a href="https://github.com/skosir18/Portfolio/blob/main/ML%20project%20code/SEED_swell_pareto.py" target="_blank" class="image"><img 
                                             src="images/seed_swell_pareto.jpg" alt="" /></a>
 											<div class="inner">
@@ -99,11 +98,54 @@
                                                 to maximize fuel performance within operability limits. Only the final plotting code is available here do to confidentiality 
                                                 requirements.</p>
 											</div>
-										</article>
+										</article> -->
 									</div>
 								</div>
 							</section>
 
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Optimization Project</h3>
+									<p>In this project I performed <a href="http://midaco-solver.com/" target="_blank">ant colony optimization</a> on a repesentative 
+                                    group of molecules to identify compositions that improve the performance of aviation fuel. Credit goes to Robert Stachler for
+                                    writing the parallel processing code that made this possible.
+                                    <p>See the full publication <a href="https://www.sciencedirect.com/science/article/pii/S0016236120317142" target="_blank">here</a>.
+									<div class="features">
+										<article>
+											<a href='https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Optimization%20project%20code/latin_hypercube_sampling_SK.py' target="_blank" class="image"><img 
+                                            src="images/Methods Flow Chart.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Latin hypercube sampling with Python</h4>
+												<p>Latin hypercube sampling was performed on neat molecule properties and their uncertainties to allow for uncertainty
+                                                propagation through the optimization framework. The result was 100 spreadsheets of molecule properties orthogonally sampled
+                                                from the uncertainties provided in literature.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Optimization%20project%20code/SEED_zoom.py" target="_blank" class="image"><img 
+                                            src="images/SEED_zoom.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Optimization with <a href="http://midaco-solver.com/" target="_blank">MIDACO*</a></h4>
+												<p>The general approach was to use ant colony optimization in Python to maximize fuel performance within operability
+                                                limits.</p>
+                                                <p>*Only the plotting code is available here due to confidentiality requirements.
+											</div>
+										</article>
+										<article>
+											<a class="image"><img src="images/Overall_Pareto_Front_Summary_Unique_SS_0_thru_99_r5.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Pareto front convergence in Python*</h4>
+												<p>One example of an optimization function that I worked on is Pareto front convergence criteria. The cumulative Pareto
+                                                fronts generated via 500 random initial guess optimization rounds went through six rounds of optimization revisions guided by
+                                                convergence criteria to reduce discontinuities.</p>
+                                                <p>*This code is not available due to confidentiality requirements.
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
 
 
 					</div>
@@ -112,7 +154,7 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank"> HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
