@@ -27,6 +27,7 @@
 						<li><a href="#one" class="active">Contact</a></li>
 						<li><a href="#two">Machine Learning Project</a></li>
 						<li><a href="#three">Optimization Project</a></li>
+						<li><a href="#four">Time Series Project</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -142,6 +143,46 @@
                                                 discontinuities that exist. Values that fell outside thresholds for these metrics served as initializations
                                                 for future optimization revisions.</p>
                                                 <p>*This code is not available due to confidentiality requirements.
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+                            
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Time Series Project</h3>
+									<p>In this project I trained a neural network to predict carbon emissions based on a limited number of US population characteristics 
+                                    (i.e., urban population, gross national income, and age distribution). Credit goes to Kevin Hallinan for providing the spectral analysis code.
+                                    <p>See the report <a href="https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Time%20series%20project%20files/Project%203%20Final%20Report.pdf" target="_blank">here</a>
+                                    and the training data <a href="https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Time%20series%20project%20files/carbon.with.feedback.18.csv" target="_blank">here</a>.
+									<div class="features">
+										<article>
+											<a href='https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Time%20series%20project%20code/spectrum.analysis.R' target="_blank" class="image"><img 
+                                            src="images/Spectral analysis.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Spectral Analysis in R</h4>
+												<p>Spectral analysis was performed on the carbon emission data to illustrate periodicities in the target variable.
+                                                It was found that frequencies of down to 0.04 - periods of 27 years - are significant and should be considered when 
+                                                feedback is generated.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://github.com/ShaneKosir/ShaneKosir.github.io/blob/main/Time%20series%20project%20code/Create.Feedback.R" target="_blank" class="image"><img 
+                                            src="images/Target variable feedback.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Target Variable Feedback in R</a></h4>
+												<p>Target variable feedback allows neural networks to handle time series data. The original target variable, which is represented in green, 
+                                                is offset by one year for every column in red. Each column in the red then serves as a feature for model generation.</p>
+											</div>
+										</article>
+										<article>
+											<a class="image"><img src="images/Random forest.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Neural Network Feature Importance</h4>
+												<p>Neural network feature importances were calculated via the Gedeon method, which considers the magnitude of the weights in the first 
+                                                two hidden layers associated with each feature. Surprisingly, gross national income and urban population had a relatively low impact.</p>
 											</div>
 										</article>
 									</div>
